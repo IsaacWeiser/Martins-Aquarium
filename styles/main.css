@@ -1,0 +1,119 @@
+
+/*header styles*/
+header {
+    border: dotted 1px black;
+    text-align:center;
+    background-color: orange;
+    padding:15px;
+}
+/*parent class of the header*/
+.top {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+img {
+    height: 15%;
+    width:15%;
+}
+
+h1 {
+    border: 1px black dotted;
+    background-color: sandybrown;
+}
+/* main content section*/
+main {
+    border: dotted 1px black;
+}
+
+section {
+    border: dotted 1px black;
+}
+
+/*sidebar*/
+sidebar {
+    border: dotted 1px black;
+}
+
+/* parent of entire main class*/
+.main {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*parent class of all sections*/
+.content {
+    flex: 3;
+}
+
+/*effects all 3 major sections of the fish list, location, and quotes*/
+.content > section {
+    margin:15px;
+    padding: 25px;   
+    text-align:center;          
+}
+
+/* side section */
+.side{
+    display:flex;
+    flex: 1;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align:center;
+    padding:15px;
+    margin:15px;
+    flex-wrap: wrap;
+}
+
+.side__card{
+    background-color: orange;
+}
+
+/*fish list section*/
+.content__fish-list {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: palevioletred;
+    flex-wrap: wrap;
+}
+
+.fish-list__card {
+    background-color: peru;
+}
+
+/*effects cards in all three main sections*/
+div {
+    border: 1px dotted black;
+    flex-basis:15%;
+}
+
+/*quote list section*/
+.content__quote-list {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: wheat;
+    flex-wrap: wrap;
+}
+
+.quote-list__card{
+    background-color: yellowgreen;
+}
+
+/*location list section*/
+.content__location-list {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: violet;
+    flex-wrap: wrap;
+}
+
+.location-list__card {
+    background-color: purple;
+}
+
+/*sidebar*/
+.side {
+    background-color: royalblue;
+}
