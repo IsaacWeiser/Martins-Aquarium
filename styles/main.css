@@ -117,3 +117,8 @@ div {
 .side {
     background-color: royalblue;
 }
+
+/*section titles*/
+.content__list--title {
+    flex: 0 0 100%;
+}
