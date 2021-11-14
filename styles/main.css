@@ -13,7 +13,7 @@ header {
     flex-wrap:wrap;
 }
 
-img {
+header>img {
     height: 15%;
     width:15%;
 }
@@ -77,10 +77,21 @@ sidebar {
     justify-content: space-evenly;
     background-color: palevioletred;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .fish-list__card {
-    background-color: peru;
+    background-color: peru; 
+}
+
+.fish-list__card > img {
+    width:100%;
+}
+
+.fish-list__card > div > * {
+    margin-top:5px;
+    margin-bottom:0px;
 }
 
 /*effects cards in all three main sections*/
@@ -113,6 +124,10 @@ div {
     background-color: purple;
 }
 
+.location-list__card > img {
+    width:100%;
+}
+
 /*sidebar*/
 .side {
     background-color: royalblue;
@@ -120,5 +135,12 @@ div {
 
 /*section titles*/
 .content__list--title {
-    flex: 0 0 100%;
+flex-basis:800px;
+border:0px;
 }
+
+/*sidebar title*/
+.content__side-list--title {
+    flex-basis:100px;
+    border:0px;
+    }
